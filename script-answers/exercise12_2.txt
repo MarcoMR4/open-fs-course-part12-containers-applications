@@ -1,0 +1,13 @@
+Script started on 2026-02-20 19:21:35-06:00 [TERM="xterm-256color" TTY="/dev/pts/14" COLUMNS="156" LINES="41"]
+[?2004h]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004l[?2004h]0;root@9da61e21b8db: /root@9da61e21b8db:/# [7mmkdir -p /usr/src/app[27mmkdir -p /usr/src/app
+[?2004l[?2004h]0;root@9da61e21b8db: /root@9da61e21b8db:/# [7mtouch /usr/src/app/index.js[27mtouch /usr/src/app/index.js
+[?2004l[?2004h]0;root@9da61e21b8db: /root@9da61e21b8db:/# [K[7mls -l /usr/src/app[27mls -l /usr/src/app
+[?2004ltotal 0
+-rw-r--r-- 1 root root 0 Feb 21 01:21 index.js
+[?2004h]0;root@9da61e21b8db: /root@9da61e21b8db:/# exit
+[?2004lexit
+[?2004h]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ exit
+[?2004lexit
+
+Script done on 2026-02-20 19:22:20-06:00 [COMMAND_EXIT_CODE="0"]
