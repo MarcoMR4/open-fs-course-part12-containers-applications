@@ -1,6 +1,12 @@
 services:
-  app:                    # The name of the service, can be anything
+  todo-backend:                    # The name of the service, can be anything
     image: todo-app-backend-server # Declares which image to use
     build: ./todo-app/todo-backend 
     ports:                # Declares the ports to publish
       - 3001:3000
+
+  app-express:                   
+    image: express-server 
+    build: ./express     
+    ports:                
+      - 3003:3000
