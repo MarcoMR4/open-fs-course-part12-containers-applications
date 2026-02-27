@@ -32,13 +32,14 @@ const findByIdMiddleware = async (req, res, next) => {
 
 /* DELETE todo. */
 router.delete('/:id', findByIdMiddleware, async (req, res) => {
-  await req.todo.delete()  
+  await Todo.findByIdAndDelete(req.todo._id)  
   res.sendStatus(204);
 });
 
 /* GET todo. */
 router.get('/:id', findByIdMiddleware, async (req, res) => {
-  res.send(req.todo);
+  const todo = await Todo.findById(req.todo._id)
+  res.send(todo);
 });
 
 /* PUT todo. */
