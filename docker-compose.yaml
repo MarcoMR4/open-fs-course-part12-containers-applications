@@ -4,9 +4,27 @@ services:
     build: ./todo-app/todo-backend 
     ports:                # Declares the ports to publish
       - 3001:3000
+    environment:
+      MONGO_URL: mongodb://root:example@mongo:27017/the_database?authSource=admin
+
+
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    volumes: 
+      - ./todo-app/todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - mongo_data_container:/data/db
 
   app-express:                   
     image: express-server 
     build: ./express     
     ports:                
       - 3003:3000
+
+volumes:
+  mongo_data_container:
