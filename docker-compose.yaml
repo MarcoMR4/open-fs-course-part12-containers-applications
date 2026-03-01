@@ -25,6 +25,9 @@ services:
     image: redis
     ports:
       - 6379:6379
+    command: ['redis-server', '--appendonly', 'yes']
+    volumes: # Declare the volume
+      - ./todo-app/todo-backend/redis_data:/data
 
   app-express:                   
     image: express-server 
@@ -34,3 +37,4 @@ services:
 
 volumes:
   mongo_data_container:
+  redis_data:
