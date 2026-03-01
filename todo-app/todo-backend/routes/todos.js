@@ -1,6 +1,14 @@
 const express = require('express');
 const { Todo } = require('../mongo')
 const router = express.Router();
+const { getAsync, setAsync } = require('../redis')
+
+const COUNTER_KEY = 'added_todos'
+
+router.get('/statistics', async (_, res) => {
+  const added_todos = Number(await getAsync(COUNTER_KEY)) || 0
+  res.json({ added_todos })
+})
 
 /* GET todos listing. */
 router.get('/', async (_, res) => {
@@ -14,6 +22,9 @@ router.post('/', async (req, res) => {
     text: req.body.text,
     done: false
   })
+  const current = Number(await getAsync(COUNTER_KEY)) || 0
+  await setAsync(COUNTER_KEY, current + 1)
+
   res.send(todo);
 });
 
@@ -33,6 +44,9 @@ const findByIdMiddleware = async (req, res, next) => {
 /* DELETE todo. */
 router.delete('/:id', findByIdMiddleware, async (req, res) => {
   await Todo.findByIdAndDelete(req.todo._id)  
+  const current = Number(await getAsync(COUNTER_KEY)) || 0
+  await setAsync(COUNTER_KEY, current - 1)
+
   res.sendStatus(204);
 });
 
