@@ -1,0 +1,73 @@
+Script started on 2026-02-28 21:24:33-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="156" LINES="41"]
+[?2004h]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ exitdocker exec -t open-fs-course-part12-containers-applications-mongo-1 bash[A]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ [C[C[C[C[C[C[C[29Pcompose -f docker-compose.yaml ps
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup -d
+[?2004l[1A[1B[0G[?25l[+] Running 3/0
+ [32m✔[0m Container open-fs-course-part12-containers-applications-app-express-1   [32mRunning[0m                                                                     [34m0.0s [0m
+ [32m✔[0m Container open-fs-course-part12-containers-applications-todo-backend-1  [32mRunning[0m                                                                     [34m0.0s [0m
+ [32m✔[0m Container open-fs-course-part12-containers-applications-mongo-1         [32mRunnin...[0m                                                                   [34m0.0s [0m
+[?25h[?2004h]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ docker compose -f docker-compose.yaml up -dexit[Kdocker exec -t open-fs-course-part12-containers-applications-mongo-1 bash[A]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ [C[C[C[C[C[C[C[29Pcompose -f docker-compose.yaml ps
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lNAME                                                           IMAGE                     COMMAND                  SERVICE        CREATED          STATUS          PORTS
+open-fs-course-part12-containers-applications-app-express-1    express-server            "docker-entrypoint.s…"   app-express    15 minutes ago   Up 15 minutes   0.0.0.0:3003->3000/tcp
+open-fs-course-part12-containers-applications-mongo-1          mongo                     "docker-entrypoint.s…"   mongo          15 minutes ago   Up 15 minutes   0.0.0.0:3456->27017/tcp
+open-fs-course-part12-containers-applications-todo-backend-1   todo-app-backend-server   "docker-entrypoint.s…"   todo-backend   15 minutes ago   Up 15 minutes   0.0.0.0:3001->3000/tcp
+[?2004h]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ docker compose -f docker-compose.yaml psup -dexit[Kdocker exec -t open-fs-course-part12-containers-applications-mongo-1 bash[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cit open-fs-course-part12-containers-applications-mongo-1 bash[A]0;mark@Marco-Lap: /mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[01;32mmark@Marco-Lap[00m:[01;34m/mnt/c/Cursos/FullStack2/open-fs-course-part12-containers-applications[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004hroot@7e06ee3089bb:/# mongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	69a3b195f5181a56738563b0
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.7.0[0m
+Using MongoDB:		8.2.5
+[1m[33mUsing Mongosh[0m:		2.7.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2026-03-01T03:08:59.373+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2026-03-01T03:09:00.023+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2026-03-01T03:09:00.023+00:00: We suggest setting the contents of sysfsFile to 0.
+   2026-03-01T03:09:00.023+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gsj[1G[0Jtest> s[8Ghow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          68.00 KiB
+[1mthe_database[0m   68.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gtodos.find({})
+Uncaught [1m[31mReferenceError[0m: todos is not defined
+[1G[0Jthe_database> [15G[1G[0Jthe_database> todos.find({})[29G[1D[1G[0Jthe_database> todos.find[44m([49m{})[28G[1D[1G[0Jthe_database> todos.find([44m{[49m})[27G[1D[1G[0Jthe_database> todos.find({[44m}[49m)[26G[1D[1G[0Jthe_database> todos.find({}[44m)[49m[25G[1D[1G[0Jthe_database> todos.find({})[24G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> dtodos.find({})[16G[1G[0Jthe_database> dbtodos.find({})[17G[1G[0Jthe_database> db.todos.find({})[18G[14C
+[
+  {
+    _id: ObjectId([32m'69a1096ab0bf2c16768563b1'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'69a1096ab0bf2c16768563b2'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'69a10d823f4b620013196044'[39m),
+    text: [32m'Study Kubernetes and docker'[39m,
+    done: [33mtrue[39m,
+    __v: [33m0[39m
+  },
+  {
+    _id: ObjectId([32m'69a3aec09be4b5304e8563b1'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne({ text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone: fals[33mfalse[39m })[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[103G[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[104G[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[103G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[102G[1D[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[101G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[87G[1D[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[86G[1D[1C[1C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m })[87G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt "[39m, [33mdone[39m: [33mfalse[39m })[88G[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt 2"[39m, [33mdone[39m: [33mfalse[39m })[89G[17C[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my tool belt 2"[39m, [33mdone[39m: [33mfalse[39m })[106G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'69a3b1e1f5181a56738563b1'[39m)
+}
+[1G[0Jthe_database> [15Gdb.todos.find()[1D[1G[0Jthe_database> db.todos.find[44m([49m)[29G[1G[0Jthe_database> db.todos.find[44m([49m{)[30G[1G[0Jthe_database> db.todos.find[44m([49m{})[31G[1D[1G[0Jthe_database> db.todos.find([44m{[49m})[30G[1G[0Jthe_database> db.todos.find([44m{[49mn})[31G[1G[0Jthe_database> db.todos.find([44m{[49mna})[32G[1G[0Jthe_database> db.todos.find([44m{[49mnam})[33G[1G[0Jthe_database> db.todos.find([44m{[49mname})[34G[1G[0Jthe_database> db.todos.find([44m{[49m[33mname[39m:})[35G[1G[0Jthe_database> db.todos.find([44m{[49m[33mname[39m: })[36G[1G[0Jthe_database> db.todos.find([44m{[49m[33mname[39m:})[35G[1G[0Jthe_database> db.todos.find([44m{[49mname})[34G[1G[0Jthe_database> db.todos.find([44m{[49mnam})[33G[1G[0Jthe_database> db.todos.find([44m{[49mna})[32G[1G[0Jthe_database> db.todos.find([44m{[49mn})[31G[1G[0Jthe_database> db.todos.find([44m{[49m})[30G[1G[0Jthe_database> db.todos.find([44m{[49mt})[31G[1G[0Jthe_database> db.todos.find([44m{[49mte})[32G[1G[0Jthe_database> db.todos.find([44m{[49mtex})[33G[1G[0Jthe_database> db.todos.find([44m{[49mtext})[34G[1G[0Jthe_database> db.todos.find([44m{[49m[33mtext[39m:})[35G[1G[0Jthe_database> db.todos.find([44m{[49m[33mtext[39m: })[36G"Increase the number of t[1G[0Jthe_database> db.todos.find({[33mtext[39m: [32m"Increase the number of to})[39m[62Gols in my tool belt 2"[1G[0Jthe_database> db.todos.find({[33mtext[39m: [32m"Increase the number of tools in my tool belt 2"[39m}})[85G[1G[0Jthe_database> db.todos.find([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt 2"[39m})[84G[2C[1G[0Jthe_database> db.todos.find({[33mtext[39m: [32m"Increase the number of tools in my tool belt 2"[39m})[86G
+[
+  {
+    _id: ObjectId([32m'
