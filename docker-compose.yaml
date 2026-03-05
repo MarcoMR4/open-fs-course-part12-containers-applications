@@ -35,6 +35,17 @@ services:
     ports:                
       - 3003:3000
 
+  todo-frontend:                    
+    image: todo-app-frontend-server
+    build: 
+      context: ./todo-app/todo-frontend
+      args:
+        VITE_BACKEND_URL: http://localhost:3001
+    ports:                
+      - 8000:80
+    depends_on:
+      - todo-backend
+
 volumes:
   mongo_data_container:
   redis_data:
