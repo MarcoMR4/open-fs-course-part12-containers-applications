@@ -8,5 +8,8 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true, 
     setupFiles: "./src/setupTests.ts",
-  }
+  },
+  server: {
+    allowedHosts: ['todo-frontend-dev', 'localhost'],
+  },
 })
